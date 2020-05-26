@@ -1,16 +1,14 @@
-# scope.rb
-
-a = 5             # variable is initialized in the outer scope
-
-3.times do |n|    # method invocation with a block
-  a = 3
-  puts n           # is a accessible here, in an inner scope?
+def caesar_cipher(string, shift)
+  punctuation = [".",",",":",";","?","(",")","[","]","!","_","-","/"]
+  string.each_char {|c|
+    unless punctuation.include? c
+      puts c
+    else
+      puts "@"
+    end
+  }
 end
-4.times do |c|
-  
 
-
-puts "words"
-
-MY_CONST = "sean"
-MY_CONST = "yeo"
+phrase = gets.chomp
+toshift = gets.chomp
+caesar_cipher(phrase, toshift)
