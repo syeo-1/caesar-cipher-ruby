@@ -1,1 +1,1 @@
-simple caesar cipher for encoding/decoding messages
+simple caesar cipher for encoding/decoding messages written in Ruby
